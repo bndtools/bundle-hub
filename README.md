@@ -17,7 +17,7 @@ have all 3 nummeric parts. This is the standard repo format.
 After you've added a number of bundles you must update the index. A current version
 of `repoindex` is in this repo later versions can be found [here][1]. Please update this version.
 
-     $ make index
+     $ make all
 
 For the `make` challenged ... well, just ask someone with a more advanced OS ...
 
