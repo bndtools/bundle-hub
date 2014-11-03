@@ -1,4 +1,4 @@
-INDEXER  = org.osgi.impl.bundle.repoindex.cli/org.osgi.impl.bundle.repoindex.cli-0.0.6.jar
+INDEXER  = org.osgi.impl.bundle.repoindex.cli/org.osgi.impl.bundle.repoindex.cli-2.1.4.jar
 REPONAME = BundleHub
 
 JARS     = $(shell find * -name '*.jar' | sort)
