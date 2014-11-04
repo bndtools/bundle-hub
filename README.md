@@ -14,11 +14,6 @@ files to <bsn>/<bsn>-<version>.jar (notice that version must have no qualifier a
 have all 3 nummeric parts. This is the standard repo format.
  
 ## Rebuilding the index (index.xml.gz) when adding bundles
-After you've added a number of bundles you must update the index. A current version
-of `repoindex` is in this repo later versions can be found [here][1]. Please update this version.
+After you've added a number of bundles you must update the index.
 
-     $ make all
-
-For the `make` challenged ... well, just ask someone with a more advanced OS ...
-
-[1]: https://bndtools.ci.cloudbees.com/job/bindex.master/lastSuccessfulBuild/artifact/cnf/releaserepo/org.osgi.impl.bundle.repoindex.cli/
+     $ ./gradlew

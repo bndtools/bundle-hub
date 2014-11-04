@@ -1,0 +1,39 @@
+/*
+ * Rebuild index for bundle-hub
+ */
+repositories {
+  maven {
+    url 'http://dl.bintray.com/bnd/bnd'
+  }
+}
+
+configurations {
+  repoindex
+}
+
+dependencies {
+  repoindex group: 'biz.aQute.bnd', name: 'org.osgi.impl.bundle.repoindex.cli', version: '2.1.4' 
+}
+
+defaultTasks = [':index']
+
+task('index') {
+  /* Bundles to index. */
+  def bundles = fileTree(projectDir) {
+    include '**/*.jar'
+    exclude '**/*-latest.jar'
+    exclude '.*/'
+  }
+  doLast {
+    javaexec {
+      main = '-jar' // first arg must be the jar
+      args configurations.repoindex.asPath
+      args '-n', 'BundleHub'
+      args bundles*.absolutePath
+    }.assertNormalExitValue()
+  }
+}
+
+task wrapper(type: Wrapper) {
+  jarFile = rootProject.file('.gradle-wrapper/gradle-wrapper.jar')
+}
