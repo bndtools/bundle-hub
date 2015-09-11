@@ -2,9 +2,7 @@
  * Rebuild index for bundle-hub
  */
 repositories {
-  maven {
-    url 'http://dl.bintray.com/bnd/bnd'
-  }
+  mavenCentral()
 }
 
 configurations {
@@ -12,7 +10,7 @@ configurations {
 }
 
 dependencies {
-  repoindex group: 'biz.aQute.bnd', name: 'org.osgi.impl.bundle.repoindex.cli', version: '2.1.5' 
+  repoindex group: 'biz.aQute.bnd', name: 'org.osgi.impl.bundle.repoindex.cli', version: '3.0.0' 
 }
 
 defaultTasks = [':index']
