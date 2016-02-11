@@ -10,7 +10,7 @@ configurations {
 }
 
 dependencies {
-  repoindex group: 'biz.aQute.bnd', name: 'org.osgi.impl.bundle.repoindex.cli', version: '3.0.0' 
+  repoindex group: 'biz.aQute.bnd', name: 'org.osgi.impl.bundle.repoindex.cli', version: '3.1.0' 
 }
 
 defaultTasks = [':index']
