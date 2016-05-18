@@ -10,7 +10,7 @@ configurations {
 }
 
 dependencies {
-  repoindex group: 'biz.aQute.bnd', name: 'org.osgi.impl.bundle.repoindex.cli', version: '3.1.0' 
+  repoindex group: 'biz.aQute.bnd', name: 'org.osgi.impl.bundle.repoindex.cli', version: '3.2.0' 
 }
 
 defaultTasks = [':index']
@@ -20,14 +20,17 @@ task('index') {
   def bundles = fileTree(projectDir) {
     include '**/*.jar'
     exclude '**/*-latest.jar'
+    exclude '**/*-sources.jar'
+    exclude '**/*-javadoc.jar'
     exclude '.*/'
   }
   doLast {
+    def bundlesToIndex = bundles*.absolutePath.sort()
     javaexec {
       main = '-jar' // first arg must be the jar
       args configurations.repoindex.singleFile
       args '-n', 'BundleHub'
-      args bundles*.absolutePath
+      args bundlesToIndex
     }.assertNormalExitValue()
   }
 }
