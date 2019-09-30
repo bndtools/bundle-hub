@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="BundleHub" increment="1568995699248">
+<repository xmlns="http://www.osgi.org/xmlns/repository/v1.0.0" name="BundleHub" increment="1569872051904">
   <resource>
     <capability namespace="osgi.identity">
       <attribute name="license" value="http://www.opensource.org/licenses/apache2.0.php;description=&quot;Apache 2.0 Licensed&quot;;link=LICENSE"/>
@@ -12066,6 +12066,90 @@
   </resource>
   <resource>
     <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache-2.0;description=&quot;Apache License, Version 2.0&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;,EPL-2.0;description=&quot;Eclipse Public License, Version 2.0&quot;;link=&quot;https://opensource.org/licenses/EPL-2.0&quot;"/>
+      <attribute name="osgi.identity" value="org.bndtools.templates.osgi"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.3.0.201909301554" type="Version"/>
+      <attribute name="documentation" value="https://bndtools.org/"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.3.0.201909301554" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.bndtools.templates.osgi"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.3.0.201909301554" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.bndtools.templates.osgi"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="comp-help.xml"/>
+      <attribute name="name" value="Component Development"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQAPYAAElJSU5OTlFRUVNTU1hYWFtbW2FhYWJiYmRkZGlpaWtra21tbW5ubm9vb3l5eYCAgIGBgYKCgoODg4WFhYeHh4mJiYyMjI+Pj5ycnJ6enqCgoKGhoaOjo6Wlpaampqenp6ioqKqqqqysrLCwsLGxsbKysrW1tbe3t7m5ubq6ury8vL29vb6+vr+/v8DAwMHBwcLCwsPDw8TExMXFxcbGxsfHx8jIyMnJycrKysvLy8zMzM3Nzc7Ozs/Pz9HR0dLS0tTU1NXV1dbW1tjY2NnZ2dvb29zc3N3d3d7e3uLi4uTk5OXl5efn5+np6e3t7QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAE8AIf8LSW1hZ2VNYWdpY2sHZ2FtbWE9MQAsAAAAABAAEAAAB6CAT4KDTy8vhIiEL05MI4mCPjw8hUxGjiIeHoRGTkYvKj4+IyI8TCqKTD5GRqGsPC8OipGfGB6GnxWCry9GPCoRghWGPBURES+pkpqDIp88RgwqqS88joO2Iy8+CR4XHq88GIIXnyoJBAGCzdQvIiIq8B4MhCI+1JKSzvODKkYexp8YMPDgI9agCA0SPInwSmGBAAAeLVQxooBERAUIPAoEADs="/>
+      <attribute name="ranking" value="1001.0" type="Double"/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/OSGi Standard Templates"/>
+      <attribute name="dir" value="templates/ds"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="api-help.xml"/>
+      <attribute name="name" value="API Project"/>
+      <attribute name="icon" value="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABZVBMVEUAAABLh7sxW5A2ZJkzX5Q2ZZpMi8FQkcdHgrcxW5A5aZ5SlMpfrOJdqN4xW5BbpNpVmtBDe7FfrOJOjsRfrOJfrOJAdaoxW5BfrOJfrOJSlMoxW5A8b6Q8b6RfrOJVmtAxW5A5aZ5Yn9VbpNoxW5BdqN5dqN45aZ5frOJSlMpfrOIxW5BAdapDe7H////A3PjB3fr6/P/C3Pn8/v/3+/6/3Prx9/7u9f3j8P3I4fvD3fq92/nm8P3c6/3g7fzR5PvN4/vL4vvU5/rF3vnz+f3Y6v3V6fza6vnH3/fB2e+my+pqseVsn+Gju9dglNdYj9SDocRXhrY9ZZjr8f3q8/vQ5frB3Pq11fmtz/eix/fi7fXi6vXY5/XA2vTT3+6y0O3N3OyaxuuMwOqBvOp3t+jD1OeGruS6zuKzxt+HuN97pdlvnthqm9eMrtVxndKVr85aj8tXlMhTjcFShrltkLhfgq1PdKOdhMrdAAAALnRSTlMA/NqKaxQQB/v69vHw7evq5eTj2s/MysnGu7u2s6uopKOekoSEbV1XS0U2NCge2PG++QAAAOpJREFUGNMVzNNiA1EUheETtKlt2z0eT0ZJG7O2bT5/9vx367tYCKG1kZvbQqGjb2BwdGolAbB4jaH0bibI5juXAOavsG7vaKpkWJ51A8zl2fZW0tF1HRfZE8D0hep7bgAo3nM9AGM5h/CU4Xt74rN9FaD/1LUshdKUwb6aERTRspayb4bwHUIiIjkhhFLTT7cgaPOHKYRwzs3guDeEjZqgIFQxk5dDsJsm3+yjwwOLG572MAGw3FZ7fnktlyuVoluaBYhVMSSkqt5nPmIA8d/S4935iSaFY1fj4cfCzPhwtKu1Xv//i64j1ABv2TB0qN71PQAAAABJRU5ErkJggg=="/>
+      <attribute name="ranking" value="1000.0" type="Double"/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/OSGi Standard Templates"/>
+      <attribute name="dir" value="templates/api"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="integration-test-help.xml"/>
+      <attribute name="name" value="Integration Testing"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQAMQAAOCwsuG6u9hCT9lLV9pfattqc9x0fNx+hd2IjiGETzmPYSyKV1Gbc12hfGqnhXatjo65oJu/qafFsrPKu7/QxOLExP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABYALAAAAAAQABAAAAVMoCWOZGmeaHpGTMs8qsgkUyzTtjVPRV8hBYRpZxEILYQT0ShKihqQW42JFEUSCtEiIaI6LQsGBZKAIQUWwIEEYTgko4BhcAjk7vhTCAA7"/>
+      <attribute name="ranking" value="999.0" type="Double"/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="bbb/OSGi Standard Templates"/>
+      <attribute name="dir" value="templates/integration-test"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="name" value="Minimal Workspace"/>
+      <attribute name="ranking" value="0.0" type="Double"/>
+      <attribute name="org.bndtools.template" value="workspace"/>
+      <attribute name="category" value="bbb/OSGi Standard Templates"/>
+      <attribute name="dir" value="templates/workspace-minimal"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/launch/felix-gogo.xml"/>
+      <attribute name="name" value="Felix 4+"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQAOYAAAAAAP///+EdiTcIsd/AXIyltvCtwoUNb8VoTy4FVW07zOh0lH9/f4oHstbg4tvQmSItMbYDjuc5YMWfuD8FgXYO2OIMY8WkUuheZNyCucnJyWUGrfXt1oYemFkDaemWoaysrOtVgiMGeFYGks0CfMkferAdktxBd+fdraAFo0wKwffZ5e7Fxfzu8e64rt7Vg7oHdOglXuZodUQGbYIMw+AZdc+6VNeauePq6uWJltkCbpIEmfPc1nQGqGwJzeuhqygGa+RBa+hHevf5+UcKiuAyaMcEiOQdaukUXd0XYiMFUbwLiJ8HmH2GieLRjHgIx+ywudgMbvfi4rQHlr8Di1AGl+qDlokKq/76+/r18eNAdqQEnI2rs9MDed8EbGcHs+iXp/Lx2Pnv7ScETvfe5uYLZNsFcKQFoNni47sIiv37+MoFh74EiP79/Pv7+/Pf1v34+sADiP////fa5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAAHQALAAAAAAQABAAAAeRgA8vKC10hoeIhk4XNic/YomJYQQIB2lFH1mRh29BMB47SzEsm4YGJQ0UVUZIOXClNyZUIzNTZVpSm3JWUWcbCUw6GDybbWAWbD1jV2YSHKVQSRFfSjRrMmqlC14pKkAVAi6lWEIkTwNEXSGldGRHcT4iHRM47HM1WwoQXGjsdCsZCjQB4c/QEAduGBREpIFOIAA7"/>
+      <attribute name="ranking" value="1001.0" type="Double"/>
+      <attribute name="org.bndtools.template" value="bndrun"/>
+      <attribute name="category" value="bbb/OSGi Standard Templates"/>
+      <attribute name="dir" value="templates/launch/felix-gogo"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/launch/enroute/base.xml"/>
+      <attribute name="name" value="OSGi enRoute Base Launcher"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEQAQAPUvAAAAACQkJUVFR1RVV1VWWGBhY2JjZWNkZm9wcnBxc3R1d3V2eXx9f4eJjIiJjJOVmJianZ6go6CipaiqramrrqyusbO1uLa3urm7vbq8vsbHycfIysjJy8rLzdHS1NTV1tbX2dzd3t7f4e3u7vDw8fLy8/X19fb29vf39/j5+fr6+/v7+/z8/P39/f7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADAALAAAAAARABAAAAaMQJhwCAMYiUiicZlEGh3QAqA53LyuV5SCinpBLhGAIvRqvlADwKZQMVrKyFfDuK5IAyO4UINargUbRhF6MBoeSx8HAB9pBy9TRRsfRgKPAA9zBY9CABR9ABhtAA4YAIOQAJoODC9SYhsBKBxHRhxnF0sPHCAvArRGIi8TaQEYXQpMRUYYWFcirlTRQkEAOw=="/>
+      <attribute name="ranking" value="1000.0" type="Double"/>
+      <attribute name="org.bndtools.template" value="bndrun"/>
+      <attribute name="category" value="ccc/OSGi enRoute"/>
+      <attribute name="dir" value="templates/launch/enroute/base"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="templates/launch/enroute/debug.xml"/>
+      <attribute name="name" value="OSGi enRoute Debug Launcher"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEQAQAPUvAAAAACQkJUVFR1RVV1VWWGBhY2JjZWNkZm9wcnBxc3R1d3V2eXx9f4eJjIiJjJOVmJianZ6go6CipaiqramrrqyusbO1uLa3urm7vbq8vsbHycfIysjJy8rLzdHS1NTV1tbX2dzd3t7f4e3u7vDw8fLy8/X19fb29vf39/j5+fr6+/v7+/z8/P39/f7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADAALAAAAAARABAAAAaMQJhwCAMYiUiicZlEGh3QAqA53LyuV5SCinpBLhGAIvRqvlADwKZQMVrKyFfDuK5IAyO4UINargUbRhF6MBoeSx8HAB9pBy9TRRsfRgKPAA9zBY9CABR9ABhtAA4YAIOQAJoODC9SYhsBKBxHRhxnF0sPHCAvArRGIi8TaQEYXQpMRUYYWFcirlTRQkEAOw=="/>
+      <attribute name="ranking" value="999.0" type="Double"/>
+      <attribute name="org.bndtools.template" value="bndrun"/>
+      <attribute name="category" value="ccc/OSGi enRoute"/>
+      <attribute name="dir" value="templates/launch/enroute/debug"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="17480" type="Long"/>
+      <attribute name="url" value="org.bndtools.templates.osgi/org.bndtools.templates.osgi-4.3.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="1A86D7EF1235979F496A11B99285A4E3C0127FF8876A183663F7F5EBE55FBA17"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
       <attribute name="license" value="http://opensource.org/licenses/EPL-1.0; description=&quot;Eclipse Public License, Version 1.0&quot;; link=&quot;http://www.eclipse.org/legal/epl-v10.html&quot;"/>
       <attribute name="osgi.identity" value="org.bndtools.templates.template"/>
       <attribute name="type" value="osgi.bundle"/>
@@ -12430,6 +12514,53 @@
       <attribute name="url" value="org.bndtools.templates.template/org.bndtools.templates.template-4.2.0.jar"/>
       <attribute name="mime" value="application/vnd.osgi.bundle"/>
       <attribute name="osgi.content" value="E0DBC486EA13D94610C75251EA843F3F7267B087EF726209AC7C8C0000A07E7A"/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="license" value="Apache-2.0;description=&quot;Apache License, Version 2.0&quot;;link=&quot;https://opensource.org/licenses/Apache-2.0&quot;,EPL-2.0;description=&quot;Eclipse Public License, Version 2.0&quot;;link=&quot;https://opensource.org/licenses/EPL-2.0&quot;"/>
+      <attribute name="osgi.identity" value="org.bndtools.templates.template"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" value="4.3.0.201909301554" type="Version"/>
+      <attribute name="documentation" value="https://bndtools.org/"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="bundle-version" value="4.3.0.201909301554" type="Version"/>
+      <attribute name="osgi.wiring.bundle" value="org.bndtools.templates.template"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="bundle-version" value="4.3.0.201909301554" type="Version"/>
+      <attribute name="osgi.wiring.host" value="org.bndtools.templates.template"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="project.help.xml"/>
+      <attribute name="name" value="Project Template Project (StringTemplate)"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQAPUAAGpcZ25hcHVofruHMfXHWPvkY/7xZ1VomFdrnFxxn3xvkGN3pGl9qYN3oYp+sX2Il3eDm3OBnnWCnHmEmm+Er3aKtHuPt3+Tu42RjJeYhZqZg52cgpGViYaOkYKKlI6EvMzw/+P4/uT4/+X5/+b4/+b5/+n5/+36/+76//D7//H7//T7//X7//T9//X9//j8//n8//j+//n+/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADMALAAAAAAQABAAAAafwIFwSBTOjrOBYclsDpDJwufjaCgEAUCBmCR4v2Cl4bkBmc/ojfaZAYne8JI8431yQBdLhcJYJA4iGGYbM4JyJSKHiBhvhB14ehQRCX8nHiUhHDMPICclJ6ApoCqXJRibIB8WDH8pKq8Pch6or68sLLUPISWzECAqMjDCLDIyKhAhIQ8zEREQEBMMzxDSEckQUL4hcCLJ19nP0tTNzthBADs="/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="nnn/Template Projects"/>
+      <attribute name="dir" value="templates/project"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="bndrun.help.xml"/>
+      <attribute name="name" value="Run Template Project"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQAPUAAGpcZ25hcHVofruHMfXHWPvkY/7xZ1VomFdrnFxxn3xvkGN3pGl9qYN3oYp+sX2Il3eDm3OBnnWCnHmEmm+Er3aKtHuPt3+Tu42RjJeYhZqZg52cgpGViYaOkYKKlI6EvMzw/+P4/uT4/+X5/+b4/+b5/+n5/+36/+76//D7//H7//T7//X7//T9//X9//j8//n8//j+//n+/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADMALAAAAAAQABAAAAafwIFwSBTOjrOBYclsDpDJwufjaCgEAUCBmCR4v2Cl4bkBmc/ojfaZAYne8JI8431yQBdLhcJYJA4iGGYbM4JyJSKHiBhvhB14ehQRCX8nHiUhHDMPICclJ6ApoCqXJRibIB8WDH8pKq8Pch6or68sLLUPISWzECAqMjDCLDIyKhAhIQ8zEREQEBMMzxDSEckQUL4hcCLJ19nP0tTNzthBADs="/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="nnn/Template Projects"/>
+      <attribute name="dir" value="templates/bndrun"/>
+    </capability>
+    <capability namespace="org.bndtools.template">
+      <attribute name="help" value="project.help.xml"/>
+      <attribute name="name" value="Project Template Project (Mustache)"/>
+      <attribute name="icon" value="data:image/gif;base64,R0lGODlhEAAQAPUAAGpcZ25hcHVofruHMfXHWPvkY/7xZ1VomFdrnFxxn3xvkGN3pGl9qYN3oYp+sX2Il3eDm3OBnnWCnHmEmm+Er3aKtHuPt3+Tu42RjJeYhZqZg52cgpGViYaOkYKKlI6EvMzw/+P4/uT4/+X5/+b4/+b5/+n5/+36/+76//D7//H7//T7//X7//T9//X9//j8//n8//j+//n+/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADMALAAAAAAQABAAAAafwIFwSBTOjrOBYclsDpDJwufjaCgEAUCBmCR4v2Cl4bkBmc/ojfaZAYne8JI8431yQBdLhcJYJA4iGGYbM4JyJSKHiBhvhB14ehQRCX8nHiUhHDMPICclJ6ApoCqXJRibIB8WDH8pKq8Pch6or68sLLUPISWzECAqMjDCLDIyKhAhIQ8zEREQEBMMzxDSEckQUL4hcCLJ19nP0tTNzthBADs="/>
+      <attribute name="org.bndtools.template" value="project"/>
+      <attribute name="category" value="nnn/Template Projects"/>
+      <attribute name="dir" value="templates/project-mustache"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="size" value="18377" type="Long"/>
+      <attribute name="url" value="org.bndtools.templates.template/org.bndtools.templates.template-4.3.0.jar"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+      <attribute name="osgi.content" value="96DFDAC4794EBD10B7283D98436D534ABFEA84018D2BF08451437AD735856F99"/>
     </capability>
   </resource>
   <resource>
